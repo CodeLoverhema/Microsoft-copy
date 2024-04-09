@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        body{
+            font-family: 'segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff;
+        
+        }
+
+        .nav{
+            display: flex;
+            background-color: rgb(239, 232, 232);
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            width: 100%;
+            padding: 20px 0px;
+        }
+        .logo {
+            width:130px;
+           padding: 10px;
+           margin-left: 3rem;
+           
+            /* border: 2px solid red; */
+       }
+       .left{
+        display: flex;
+        padding: 5px;
+        margin: 1rem;
+        margin-right:25rem;
+
+       }
+       .left a:hover{
+        border-bottom: 2px solid black;
+       }
+       .right{
+        display: flex;
+        padding: 5px;
+        margin-right: 2rem;
+        
+    }
+    .right a:hover{
+        border-bottom: 2px solid black;
+       }
+    a{
+     color: black;
+     margin: 0.5rem;
+
+    }
+    .mid{
+      border: 2px solid red;
+      height:450px;
+      /* display: flex; */
+      width: 100%;
+    }
+     
+
+.container{
+    /* border: 2px solid red; */
+    width: 100vw;
+    height: 70vh;
+     display: flex; 
+    justify-content: space-between; 
+}
+.slider{
+    /* border: 2px solid red; */
+    height: 70vh;
+     display: flex;
+    justify-content: space-around; 
+
+}
+.image1{
+    /* border: 2px solid red; */
+   background-image: url("Highlight-MultiCanvas-Microsoft-Copilot-App-3screens VP5-1920x600.avif");
+   height: 70vh;
+   width:99vw;
+    /* display: flex; */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+ .heading1 h3{
+    /* border: 2px solid red; */
+    position: absolute;
+    width: 28rem;
+    right:75rem;
+    /* bottom: 20rem; */
+    left: 3rem;
+    font-size: 2rem;
+    /* font-weight: 400; */
+    top: 15rem;
+ }
+ .first_p1{
+    /* border: 2px solid red; */
+    position: absolute;
+    width: 35rem;
+    right:75rem;
+    left:3rem;
+    font-size:1.2rem;
+    top: 22rem;
+ }
+ #btn1{
+    /* border: 2px solid red; */
+    position: absolute;
+    width:20rem;
+    height: 2.8rem;
+    color: white;
+    background-color: #0067b8;
+    right:75rem;
+    left:3rem;
+    font-size:1.2rem;
+    top: 28rem;
+
+ }
+ #btn1:hover{
+    color: black;
+    background-color: #0068b8eb;
+ }
+.image2{
+    /* border: 2px solid red; */
+   background-image: url("Highlight-Surface-Pro-9-M1-Family-02-1 VP5-1920x600(2).avif");
+   height: 70vh;
+   width:99vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.heading2 h1{
+    /* border: 2px solid red; */
+    position:relative;
+    width: 28rem;
+    bottom: 22rem;
+    left:60rem;
+    font-size:2.5rem;
+   
+ }
+ .first_p2{
+    /* border: 2px solid red; */
+    position:relative;
+    width: 30rem;
+    left:60rem;
+    font-size:1rem;
+    bottom: 21rem;
+ }
+ #btn2{
+    /* border: 2px solid red; */
+    position: relative;
+    width:12rem;
+    height: 2.8rem;
+    color: white;
+    background-color: #0067b8;
+    left:62rem;
+    bottom: 19rem;
+    font-size:1.2rem;
+   
+
+ }
+ #btn2:hover{
+    color: black;
+    background-color: #0068b8eb;
+ }
+       .cantrol{
+        border: 2px solid red;
+        position: relative;
+        right: 20rem;
+       }    
+         
+            .icons{
+                /* border: 2px solid red; */
+                display: flex;
+                justify-content: center;
+                height: 9rem;
+                
+            }
+            .icons i li{
+                padding: 0.5rem;
+                margin: 1rem;
+                
+            }
+        
+            .boxs1{
+                /* border: 2px solid red; */
+                font-size:1rem;
+                font-weight: 700;
+                text-align: center;
+                 margin-top: 1rem;
+            }
+            .boxs1 i{
+                font-size: 2rem;
+                color: black;
+            }
+            .boxs1 li{
+                padding: 0.5rem;
+                margin:0.5rem;
+                border-bottom: 2px solid rgba(0, 0, 255, 0.407);
+            }
+            .boxs2{
+                /* border: 2px solid red; */
+                font-size:1rem;
+                font-weight: 700;
+                text-align: center;
+                 margin-top: 1rem;
+            }
+            .boxs2 i{
+                font-size: 2rem;
+                
+            }
+            .boxs2 li{
+                border-bottom: 2px solid rgba(0, 0, 255, 0.407);
+                padding: 0.5rem;
+                margin:0.5rem;
+            }
+
+            .boxs3{
+                /* border: 2px solid red; */
+                font-size:1rem;
+                text-align: center;
+                 margin-top: 1rem;
+                 font-weight: 700;
+            }
+            .boxs3 i{
+                font-size: 2rem;
+            }
+            .boxs3 li{
+                border-bottom: 2px solid rgba(0, 0, 255, 0.407);
+                padding: 0.5rem;
+                margin:0.5rem;
+            }
+
+            .boxs4{
+                /* border: 2px solid red; */
+                font-size:1rem;
+                font-weight: 700;
+                text-align: center;
+                 margin-top: 1rem;
+            }
+            .boxs4 i{
+                font-size: 2rem;
+            }
+            .boxs4 li{
+                border-bottom: 2px solid rgba(0, 0, 255, 0.407);
+                padding: 0.5rem;
+                margin:0.5rem;
+            }
+            .category{
+                /* border: 2px solid red; */
+                background-color: #fff;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            
+            }
+            .contect1{
+                /* display: flex;
+                justify-content: center; */
+                /* flex-direction: column; */
+                height:30em;
+                width: 32rem;
+                background-color: #f3efef9c;
+                /* border: 2px solid red; */
+                margin:0.7rem;
+            }
+            .contect1 h2{
+                /* border: 2px solid red; */
+               padding-left: 1.5rem ;
+               margin-top:1.5rem;
+            }
+            .contect1 p{
+                /* border: 2px solid red; */
+               padding-left: 0.5em ;
+               margin-top:1rem;
+            }
+            .btn-img{
+                border: none;
+               margin-left: 1rem;
+               margin-top: 4.5rem;
+               padding: 10px ;
+               font-size: large;
+               color: white;
+               background-color: #0067b8;
+            }
+
+
+
+            .contect2{
+                height:30em;
+                width: 32rem;
+                background-color: #f3efef9c;
+                /* border: 2px solid red; */
+                margin:0.7rem;
+            }
+            .contect2 h2{
+                /* border: 2px solid red; */
+               padding-left: 1.5rem ;
+               margin-top:1.5rem;
+            }
+            .contect2 p{
+                /* border: 2px solid red; */
+               padding-left: 0.5em ;
+               margin-top:1rem;
+            }
+            .btn-img{
+                border: none;
+               margin-left: 1rem;
+               margin-top: 4.5rem;
+               padding: 10px ;
+               font-size: large;
+               color: white;
+               background-color: #0067b8;
+            }
+            .contect3{
+                height:30em;
+                width: 32rem;
+                background-color: #f3efef9c;
+                /* border: 2px solid red; */
+                margin:0.7rem;
+            }
+            .contect3 h2{
+                /* border: 2px solid red; */
+               padding-left: 1.5rem ;
+               margin-top:1.5rem;
+            }
+            .contect3 p{
+                /* border: 2px solid red; */
+               padding-left: 0.5em ;
+               margin-top:1rem;
+            }
+            .btn-img{
+                border: none;
+               margin-left: 1rem;
+               margin-top: 4.5rem;
+               padding: 10px ;
+               font-size: large;
+               color: white;
+               background-color: #0067b8;
+            }  
+   
+            .contect4{
+                height:30em;
+                width: 32rem;
+                background-color: #f3efef9c;
+                /* border: 2px solid red; */
+                margin:0.7rem;
+            }
+            .contect4 h2{
+                /* border: 2px solid red; */
+               padding-left: 1.5rem ;
+               margin-top:1.5rem;
+            }
+            .contect4 p{
+                /* border: 2px solid red; */
+               padding-left: 0.5em ;
+               margin-top:1rem;
+            }
+            /* .img4{
+                border: 2px solid red;
+        
+            } */
+            .btn-img{
+                border: none;
+               margin-left: 1rem;
+               margin-top: 4.5rem;
+               padding: 10px ;
+               font-size: large;
+               color: white;
+               background-color: #0067b8;
+            }
+            .main{
+                background-image: url("gldn-XSS-Hero-Xbox-Series-S VP5-1596x6004.webp");
+                background-repeat:no-repeat;
+                background-size: cover;
+                height: 600px;
+                width:90%;
+                margin-bottom:5rem;
+                margin-top: 5rem;
+                margin-left:7rem;
+                margin-right:7rem;
+            }
+            .main-img{
+                /* border: 2px solid red; */
+                position:absolute;
+                margin-left: 5.5rem;
+                height:20rem;
+                width: 30rem;
+            
+            
+            }
+
+           
+                .main-img h2{
+                    margin-left: 2rem;
+                    font-size: 2rem;
+                    margin-top: 10rem;
+
+                    
+                }
+                
+                .main-img p{
+                    /* border: 2px solid red; */
+                    margin-left: 2rem;
+                    margin-top: 1rem;
+                     font-size: 1rem;
+                    
+                } 
+                .btn-main{
+                    /* border: 2px solid red; */
+                    border: none;
+                    margin-left: 1.9rem;
+                    margin-top:2rem;
+                    padding: 8px;
+                    font-size: large;
+                    color: white;
+                    background-color: #0067b8;
+                }
+                .btn-main:hover{
+                    background-color: #0068b899;
+                    color: black;
+                }
+                /* .bottum-img h1{
+                    border: 2px solid red;
+
+                } */
+                .bottum-img{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                .more-content{
+                    /* border: 2px solid red; */
+                    flex-wrap: wrap;
+                    box-shadow: 2px 2px 2px 1px grey;
+                    height: 30rem;
+                    width:20rem;
+                    margin:1rem;
+                    background-color: rgba(239, 230, 230, 0.599);
+                }
+                .more-content .bim img{
+                    width: 20em;
+                    height: 12rem;
+                    /* border: 2px solid red; */
+                }
+                .more-content h3{
+                    /* border: 2px solid red; */
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                    font-size: 1.5rem;
+                }
+                .more-content p{
+                    /* border: 2px solid red; */
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                    font-size:1rem;
+                }
+                .bottum-btn{
+                    border:none;
+                    outline: none;
+                    padding: 5px;
+                    height: 2.5rem;
+                    margin-left: 1rem;
+                    background-color: #0068b8a8;
+                    width: 12rem;
+                    color: white;
+                    margin-top: 4.6rem;
+                    font-size: large;
+                }
+                .bottum-btn:hover{
+                color: black;
+                background-color: #0068b8dd;
+                }
+                .follow-points{
+                    /* border: 2px solid red; */
+                    display: flex;
+                    justify-content: center;
+                    height:20rem;
+                    background-color: rgba(223, 213, 213, 0.495);
+                }
+                .follow-points li{
+                    display: flex;
+                    justify-content: center;
+                    line-height: 15;
+                    margin: 1.5rem;
+                    font-size: 1.2rem;
+                    
+                }
+                .follow-points a{
+                    margin-top: 1.5rem;
+                    /* font-size: 2rem; */
+                }
+                .futter{
+                    height: 30rem;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-inline: 2rem;
+                }
+                .futter-points h5{
+                    margin-top: 3rem;
+                    height: 2rem;
+                    width: 7.5rem;
+                    color:gray;
+                    text-align: center;
+                    
+                }
+                .futter-points{
+                    margin:1rem;
+                    
+                }
+                .futter-points ul{
+                    /* border: 2px solid red; */
+                    font-size:0.7rem;
+                    width: 12rem;
+                    margin-top:1.5rem;
+                    
+                    
+                }
+                .futter-points ul li{
+                    margin-top: 1.5rem;
+                    color: gray;
+
+                }
+                .futter-points ul li a:hover{
+                    border-bottom: 1px solid gray;
+                }
+                @media screen and (max-width:600px){
+                    .logo.png{
+                        
+                        display: block;
+                    }
+                    .nav{
+                        border: 2px solid red;
+                        height:8rem;
+
+                    }
+                    .left{
+                        margin-top:8rem ;
+                        display: block;
+                        margin-top: 5rm;
+                    }
+                    .image {
+                        
+                        border: 2px solid red;
+                        margin-top: 6rem;
+                    }
+                }
+
+
+   
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            
+           <img src="logo.png" class="logo">  
+          <ul class="left">
+            <li><a href="#">Microsoft 365</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Copilot</a></li>
+            <li><a href="#">Windows</a></li>
+            <li><a href="#">Surface</a></li>
+            <li><a href="#">Xbox</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+
+       <br>
+
+           <ul class="right">
+            <li><a href="#">All Microsoft  <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#">Search  <i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="#">Cart  <i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="#">Sign in  <i class="fa-regular fa-user"></i> </a></li>
+        
+
+           </ul>
+         
+
+          </div>
+
+          <div class="container">
+            <div class="slider">
+                
+                <div class="image1"></div>
+                <div class="heading1">
+                    <h3>
+                        Unlock your potential with Microsoft Copilot
+                    </h3>
+                    
+                    <p class="first_p1"> Get things done faster and unleash your creativity with the power of AI anywhere you go. </p>
+                    <button id="btn1">Download the Copilot App</button>
+                
+
+                    <div class="cantrol">
+                      <ul>
+                      <li><a href="#">Previous<
+                      </a></li>
+                      <li><a href="#">Next>
+                      </a></li>
+                  </ul>
+                    </div>
+
+                    <div class="image2"></div>
+                    <div class="heading2">
+                        <h1> Surface Pro 9</h1>
+                        <p class="first_p2"> Tablet versatility and laptop power — all in one ultra-portable device  </p>
+                        <button id="btn2">Learn more</button>
+                
+                
+                
+                    
+                    
+                    
+                      
+                     
+                   
+                        </div> 
+         
+         </div>
+
+          </div>
+          </div>
+
+<div class="icons">
+<div class="boxs1">
+    <i class="fa-brands fa-windows"></i>
+    <li><a href="#"> Choose your Microsoft</a></li>
+</div>
+
+<div class="boxs2">
+    <i class="fa-brands fa-xbox"></i>
+    <li><a href="#">Shop Xbox</i></a></li>
+</div>
+<div class="boxs3">
+    <i class="fa-brands fa-windows"></i>
+    <li><a href="#">Get Windows 11</a></li>
+</div>
+<div class="boxs4">
+    <i class="fa-solid fa-laptop"></i>
+    <li><a href="#">Explore Surface device</a></li>
+</div>
+
+    </div>
+
+
+ 
+ <div class="category">
+    <div class="contect1">
+    <div class="img1"><img src="Content-Card-Surface-Laptop-5-M1-Platinum-01-1.webp" alt=""></div>
+    <h2>Surface Laptop 5</h2>
+    <p>Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11. </p>
+    <button class="btn-img">Learn more</button>
+ </div>
+
+ <div class="contect2">
+    <div class="img2"><img src="Surface-Laptop-Studio-01-CP2.webp" alt=""></div>
+    <h2>Surface Laptop Studio </h2>
+    <p>Flex your creative muscle on the most powerful Surface Laptop. Now available with Windows 11.  </p>
+    <button class="btn-img">Learn more</button>
+ </div>
+
+
+ <div class="contect3">
+    <div class="img3"><img src="gldn-XSX-CP-Xbox-Series-X3.webp" alt=""></div>
+    <h2>Xbox Series X</h2>
+    <p>The fastest, most powerful Xbox ever. </p>
+    <button class="btn-img"> Shop Xbox Series X</button>
+ </div>
+
+
+
+ <div class="contect4">
+    <div class="img4"><img src="Microsoft – Cloud, Computers, Apps & Gaming_files/Content-Card-Microsoft-365-Lifestyle-Sandstone-Icon-_002.avif" alt=""></div>
+    <h2>Maximise the everyday with Microsoft 365</h2>
+    <p>Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.  </p>
+    <button class="btn-img">For one person</button>
+ </div>
+
+
+
+
+ </div>
+
+
+ <div class="main">
+     <div class="main-img">
+        
+         <h2>Xbox Series S </h2>
+         <p>Next-gen performance in the smallest Xbox ever </p>
+         <button class="btn-main">Shop Xbox Series S</button> 
+    </div>
+ </div>
+
+
+ <h1>For business</h1>
+ <div class="bottum-img">
+
+    <div class="more-content">
+        <div class="bim"><img src="gldn-Surf-CP-SurfaceFamilyForBusiness.avif" alt=""></div>
+        <h3>Surface for Business </h3>
+        <p>No matter what you do, there’s a Surface to help you do it. </p>
+        <button class="bottum-btn">Shop now</button>
+
+
+    </div>
+  
+
+    <div class="more-content">
+        <div class="bim"><img src="gldn-CP-Microsoft-Teams-Commercial.webp" alt=""></div>
+        <h3>Get Microsoft Teams for free </h3>
+        <p>Online meetings, chat and shared cloud storage – all in one place.  </p>
+        <button class="bottum-btn">Sign up for free</button>
+
+
+    </div>
+
+
+
+    <div class="more-content">
+        <div class="bim"><img src="Content-Card-Windows-11-Business.jpeg" alt=""></div>
+        <h3>Windows 11 for business </h3>
+        <p>Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.  </p>
+        <button class="bottum-btn">Learn more</button>
+
+
+    </div>
+
+    <div class="more-content">
+        <div class="bim"><img src="Content-Card-Azure-AI-Bloom.jpeg" alt=""></div>
+        <h3>Join the era of AI  </h3>
+        <p> Create, communicate, and code with the latest Microsoft AI solutions. </p>
+        <button class="bottum-btn">Explore AI Solutions</button>
+
+
+    </div>
+    
+ </div>
+
+ <div class="follow">
+    <ul class="follow-points">
+        <li><a href="#">Follow Microsoft</a></li>
+       
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        
+        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+    </ul>
+ </div>
+ <div class="futter">
+    <div class="futter-points">
+    <h5>what's new</h5>
+    <ul>
+    <li><a href="#">Games</a></li>
+    <li><a href="#">Surface Pro 9</a></li>
+    <li><a href="#">Surface Laptop 5</a></li>
+    <li><a href="#">Surface Laptop Go 2</a></li>
+    <li><a href="#">Microsoft Copilot</a></li>
+    <li><a href="#">Microsoft 365</a></li>
+    <li><a href="#">Windows 11 apps</a></li>
+    </ul>
+    </div>
+
+
+    <div class="futter-points">
+        <h5>Microsoft Store</h5>
+        <ul>
+        <li><a href="#">Account profile</a></li>
+        <li><a href="#">Download Center</a></li>
+        <li><a href="#">Microsoft Store Support</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Order tracking</a></li>
+        
+        </ul>
+        </div>
+
+
+
+        <div class="futter-points">
+    <h5>Education</h5>
+    <ul>
+    <li><a href="#">Microsoft in education</a></li>
+    <li><a href="#">Devices for education</a></li>
+    <li><a href="#">Microsoft Teams for Education</a></li>
+    <li><a href="#">Microsoft 365 Education</a></li>
+    <li><a href="#">Educator training and development</a></li>
+    <li><a href="#">Deals for students and parents</a></li>
+    <li><a href="#">Azure for students</a></li>
+    </ul>
+    </div>
+
+ <!-- third line -->
+    <div class="futter-points">
+        <h5>Business</h5>
+        <ul>
+        <li><a href="#">Microsoft Cloud</a></li>
+        <li><a href="#">Microsoft Security</a></li>
+        <li><a href="#">Azure</a></li>
+        <li><a href="#">Dynamics 365</a></li>
+        <li><a href="#">Microsoft Advertising</a></li>
+        <li><a href="#">Copilot for Microsoft 365</a></li>
+        <li><a href="#">Microsoft Teams</a></li>
+        </ul>
+        </div>
+
+        <div class="futter-points">
+            <h5>Developer & IT</h5>
+            <ul>
+            <li><a href="#">Developer Center</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Microsoft Learn</a></li>
+            <li><a href="#">Microsoft Tech Community</a></li>
+            <li><a href="#">Azure Marketplace</a></li>
+            <li><a href="#">AppSource</a></li>
+            <li><a href="#">Microsoft Power Platform</a></li>
+            <li><a href="#">Visual Studio</a></li>
+            </ul>
+            </div>
+
+
+
+            <div class="futter-points">
+                <h5>Company</h5>
+                <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About Microsoft</a></li>
+                <li><a href="#">Company news</a></li>
+                <li><a href="#">Privacy at Microsoft</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Sustainability</a></li>
+                </ul>
+                </div>       
+
+        
+
+
+
+        
+ </div>
+ <div class="end">
+
+ </div>
+      
+    </div>
+    
+</body>
+</html>
